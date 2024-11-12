@@ -6,26 +6,26 @@ from PyQt5.QtPrintSupport import QPrintDialog
 import sys
 import os
 
-# remove all comments but keep this one
+
 
 class AboutDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("About...")
-        self.setFixedSize(700, 700)  # Made the about window bigger
+        self.setFixedSize(700, 700)  
         
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)
         
-        # Add image
+        
         image_path = os.path.join(os.path.dirname(__file__), 'about.png')
         if os.path.exists(image_path):
             label = QLabel()
             pixmap = QPixmap(image_path)
-            label.setPixmap(pixmap.scaled(750, 750, Qt.KeepAspectRatio))  # Scaled image bigger
+            label.setPixmap(pixmap.scaled(750, 750, Qt.KeepAspectRatio))  
             layout.addWidget(label)
         
-        # Add OK button
+        
         ok_button = QPushButton("OK")
         ok_button.clicked.connect(self.accept)
         layout.addWidget(ok_button)
@@ -49,15 +49,15 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("NuggyNet Reloaded Early Beta 1")
         self.setGeometry(100, 100, 1024, 768)
         
-        # Set window icon
+        
         icon_path = os.path.join(os.path.dirname(__file__), 'icon.ico')
         if os.path.exists(icon_path):
             self.setWindowIcon(QIcon(icon_path))
         
-        # Create menu bar
+        
         menubar = self.menuBar()
         
-        # File menu
+        
         file_menu = menubar.addMenu('File')
         
         open_action = QAction('Open', self)
@@ -74,13 +74,13 @@ class MainWindow(QMainWindow):
         quit_action.triggered.connect(self.close)
         file_menu.addAction(quit_action)
         
-        # Help menu
+        
         help_menu = menubar.addMenu('Help')
         about_action = QAction('About', self)
         about_action.triggered.connect(self.show_about)
         help_menu.addAction(about_action)
         
-        # French action
+        
         french_action = QAction('French', self)
         french_action.triggered.connect(lambda: self.add_new_tab("https://en.wikipedia.org/wiki/Baguette"))
         menubar.addAction(french_action)
@@ -193,7 +193,7 @@ class MainWindow(QMainWindow):
         if msg.clickedButton() == reject_button:
             self.show_alright_then_dialog()
         elif msg.clickedButton() == accept_button:
-            # Removed the call to self.show_browser()
+            
             pass
         else:
             sys.exit(0)
