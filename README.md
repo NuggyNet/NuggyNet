@@ -2,11 +2,11 @@
 An open source browser based on the PyQtWebEngine and PyQt5 framework 
 
 ## New features
-This is a visual refresh of [NuggyNet](github.com/DriftBR/NuggyNet3). Here are some awesome new features:
+This is a visual refresh of [NuggyNet](https://www.github.com/DriftBR/NuggyNet3). Here are some awesome new features:
 * Tabs (v3 didn't have them)
 * "French" menu (Removed but came back in this version)
 * "School" mode (Removes IceSocial sidebar)
-* [IceSocial](icesocial.net) sidebar
+* [IceSocial](https://www.icesocial.net) sidebar
 
 > [!IMPORTANT]  
 > This app might soon become Mac-only (Apple Silicon) due to the fact that the owner is getting a Mac soon and will make it natively on Xcode without the hell that Python is. 
