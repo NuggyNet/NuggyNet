@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuggyNet Quick Access</title>
+    <title>New Tab</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
-                        url('https://images.unsplash.com/photo-1719090024421-f29c83ab4034?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
-                        no-repeat center center/cover;
+            background: 
+                /* Corners - radial gradients */
+                radial-gradient(circle 28px at top left, #1a1a1a 0%, transparent 100%),
+                radial-gradient(circle 28px at top right, #1a1a1a 0%, transparent 100%),
+                radial-gradient(circle 28px at bottom left, #1a1a1a 0%, transparent 100%),
+                radial-gradient(circle 28px at bottom right, #1a1a1a 0%, transparent 100%),
+                /* Sides */
+                linear-gradient(to right, #1a1a1a 0%, transparent 20px),
+                linear-gradient(to left, #1a1a1a 0%, transparent 20px),
+                linear-gradient(to bottom, #1a1a1a 0%, transparent 20px),
+                linear-gradient(to top, #1a1a1a 0%, transparent 20px),
+                /* Original dark overlay */
+                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                /* Background image */
+                url('https://images.unsplash.com/photo-1719090024421-f29c83ab4034?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,8 +36,8 @@
             width: 500px;
             padding: 20px;
             background: rgba(25, 25, 25, 0.85); /* Dark background */
-            border-radius: 7px;
-            border: 1px solid rgba(69, 69, 69, 0.25); /* 25% opacity stroke */
+            border-radius: 5px;
+            border: 1px solid rgba(69, 69, 69, 0.100); /* 25% opacity stroke */
             position: relative;
             backdrop-filter: blur(10px); /* Apply blur to the container */
             color: #fff;
@@ -59,15 +72,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">NuggyNet Quick Access</div>
-
-        <!-- Links -->
-        <div class="links">
-            <a href="https://www.google.com" target="_blank">Google</a>
-            <a href="https://www.youtube.com" target="_blank">YouTube</a>
-            <a href="https://awethebird.necoties.org" target="_blank">AWETheBird</a>
-            <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
-        </div>
+        <div class="title">New Drift Tab!</div>
+        <p>Tabs are finally here! Too bad QTWebEngine doesn't let you click
+        links from HTML files or something. Not sure but I hope you enjoy the new
+        tabbed browsing experience!</p>
+        
+        <p>Drift the web!</p>
     </div>
 </body>
 </html>
