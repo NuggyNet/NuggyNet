@@ -1,14 +1,15 @@
-# NuggyNet
-Hey, we meet again. This is a refresh of the browser, the project started from scratch!
-Not much for now!
+# Drift
+An open source browser based on the PyQtWebEngine and PyQt5 framework 
 
 ## New features
-The visual refresh is a reimagined version of NuggyNet! Here are some awesome new features:
+This is a visual refresh of [NuggyNet](github.com/DriftBR/NuggyNet3). Here are some awesome new features:
 * Tabs (v3 didn't have them)
 * "French" menu (Removed but came back in this version)
+* "School" mode (Removes IceSocial sidebar)
+* [IceSocial](icesocial.net) sidebar
 
 > [!IMPORTANT]  
-> This app might soon become Mac-only (Apple Silicon) due to the fact that the owner is getting a Mac soon and will make it natively on Xcode without the hell that Python is
+> This app might soon become Mac-only (Apple Silicon) due to the fact that the owner is getting a Mac soon and will make it natively on Xcode without the hell that Python is. 
 
 > [!NOTE]
 > Mac and Linux users, you do your bit by contributing and adding build instructions
@@ -22,4 +23,3 @@ The visual refresh is a reimagined version of NuggyNet! Here are some awesome ne
 6) In the same directory, run `pyinstaller --onefile --noconsole --icon=icon.ico --add-data="nwin.html:." --add-data="about.png:." app.py`
 7) Navigate to the brand new "dist" folder
 8) All done
-
